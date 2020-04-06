@@ -1,0 +1,33 @@
+{
+  "name": "capstone",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ignore-path .gitignore . --fix",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizo121/capstone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mizo121/capstone/issues"
+  },
+  "homepage": "https://github.com/mizo121/capstone#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/register": "^7.9.0",
+    "eslint": "^6.8.0",
+    "eslint-config-strongloop": "^2.1.0"
+  },
+  "dependencies": {
+    "dotenv-flow": "^3.1.0",
+    "express": "^4.17.1"
+  }
+}
