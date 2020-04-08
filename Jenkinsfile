@@ -23,7 +23,7 @@ pipeline {
 	}
 	stage('Uploading docker image') {
 		steps {
-			echo "Pushing docker"
+			echo "Pushing docker image"
 			sh './upload_docker.sh'
 		}
 	}
