@@ -9,7 +9,7 @@ pipeline {
 	stage('install packages') {
 		steps {	
 			echo "Performing npm build..."
-			sh 'sudo npm install --global dockerlinter'
+			sh 'npm install --global dockerlinter'
         	
 		}
     }
