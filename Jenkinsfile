@@ -15,6 +15,18 @@ pipeline {
 			sh 'dockerlint ./Dockerfile'
 		}
 	}
+	stage('Building docker image') {
+		steps {
+			echo "Building docker"
+			sh './run_docker.sh'
+		}
+	}
+	stage('Uploading docker image') {
+		steps {
+			echo "Pushing docker"
+			sh './upload_docker.sh'
+		}
+	}
   }
 }
 
