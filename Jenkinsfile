@@ -9,14 +9,14 @@ pipeline {
 	stage('install packages') {
 		steps {	
 			echo "Performing npm build..."
-			sh 'npm install'
+			sh 'sudo npm install --global dockerlinter'
         	
 		}
     }
     stage('Linting') {
 		steps {
 			echo "Performing lint"
-			sh 'npm run lint'
+			sh 'dockerlinter -f ./Dockerfile'
 		}
 	}
   }
