@@ -4,7 +4,7 @@ FROM node:12.15.0
 WORKDIR /app
 
 # Copy the contents into the container at /app
-ADD . /app
+COPY . /app
 
 # Install packages
 RUN npm install
