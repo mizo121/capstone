@@ -2,7 +2,7 @@
 FROM node:12.15.0
 # Set the working directory to /app
 WORKDIR /app
-
+sd
 # Copy the contents into the container at /app
 COPY . /app
 

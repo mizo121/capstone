@@ -13,7 +13,6 @@ pipeline {
 		steps {
 			echo "Performing lint"
 			sh 'dockerlinter -f ./Dockerfile'
-			sh 'hadolint ./Dockerfile'
 		}
 	}
   }
