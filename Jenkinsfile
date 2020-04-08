@@ -4,12 +4,18 @@ pipeline {
   stages {
 	stage('install packages') {
 		steps {	
-			sh 'npm install'
+			withNPM(npmrcConfig:'MyNpmrcConfig') {
+            	echo "Performing npm build..."
+            	sh 'npm install'
+        	}
 		}
     }
     stage('Linting') {
 		steps {
-			sh 'npm run lint'
+			withNPM(npmrcConfig:'MyNpmrcConfig') {
+				echo "Performing lint"
+				sh 'npm run lint'
+        	}
 		}
 	}
   }
