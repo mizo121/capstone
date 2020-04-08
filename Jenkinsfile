@@ -2,7 +2,9 @@ pipeline {
   agent any
   stages {
     stage('Linting') {
-		sh 'npm run lint'
+		steps {
+			sh 'npm run lint'
+		}
 	}
   }
 }
