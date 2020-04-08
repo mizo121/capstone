@@ -1,6 +1,9 @@
 pipeline {
   agent any
   stages {
+	stage('printing hello') {
+		echo "Hello"
+	}
 	stage('install packages') {
 		steps {	
 			withNPM(npmrcConfig:'MyNpmrcConfig') {
