@@ -9,4 +9,4 @@ docker image ls
 
 # Step 3: 
 # Run my custom app
-docker run -p 3000:80 $dockerpath
+docker run -p 8000:80 $dockerpath
