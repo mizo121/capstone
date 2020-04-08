@@ -8,7 +8,7 @@ pipeline {
 	}
 	stage('install packages') {
 		steps {	
-			withNPM(npmrcConfig:'MyNpmrcConfig') {
+			withNPM(npmrcConfig:'89286558-a89e-49a8-abbd-543ecbf102d4') {
             	echo "Performing npm build..."
             	sh 'npm install'
         	}
@@ -16,7 +16,7 @@ pipeline {
     }
     stage('Linting') {
 		steps {
-			withNPM(npmrcConfig:'MyNpmrcConfig') {
+			withNPM(npmrcConfig:'89286558-a89e-49a8-abbd-543ecbf102d4') {
 				echo "Performing lint"
 				sh 'npm run lint'
         	}
