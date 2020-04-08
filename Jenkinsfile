@@ -10,7 +10,7 @@ pipeline {
 		steps {	
 			withNPM(npmrcConfig:'89286558-a89e-49a8-abbd-543ecbf102d4') {
             	echo "Performing npm build..."
-            	sh 'npm install'
+            	sh '/usr/bin/npm install'
         	}
 		}
     }
@@ -18,7 +18,7 @@ pipeline {
 		steps {
 			withNPM(npmrcConfig:'89286558-a89e-49a8-abbd-543ecbf102d4') {
 				echo "Performing lint"
-				sh 'npm run lint'
+				sh '/usr/bin/npm run lint'
         	}
 		}
 	}
