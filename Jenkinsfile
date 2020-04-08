@@ -8,18 +8,15 @@ pipeline {
 	}
 	stage('install packages') {
 		steps {	
-			withNPM(npmrcConfig:'89286558-a89e-49a8-abbd-543ecbf102d4') {
-            	echo "Performing npm build..."
-            	sh '/usr/bin/npm install'
-        	}
+			echo "Performing npm build..."
+			sh 'npm install'
+        	
 		}
     }
     stage('Linting') {
 		steps {
-			withNPM(npmrcConfig:'89286558-a89e-49a8-abbd-543ecbf102d4') {
-				echo "Performing lint"
-				sh '/usr/bin/npm run lint'
-        	}
+			echo "Performing lint"
+			sh 'npm run lint'
 		}
 	}
   }
