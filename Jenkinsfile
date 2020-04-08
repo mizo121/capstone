@@ -12,7 +12,7 @@ pipeline {
     stage('Linting') {
 		steps {
 			echo "Performing lint"
-			sh 'dockerlinter -f ./Dockerfile'
+			sh 'dockerlinter -f ./Dockerfile -s bash #default sh'
 		}
 	}
   }
