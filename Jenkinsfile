@@ -9,7 +9,7 @@ pipeline {
 	stage('install packages') {
 		steps {	
 			echo "Performing npm build..."
-			sh 'chown -R ubuntu: /usr/local/lib/node_modules'
+			sh 'sudo chown -R ubuntu: /usr/local/lib/node_modules'
 			sh 'npm install --global dockerlinter'
         	
 		}
