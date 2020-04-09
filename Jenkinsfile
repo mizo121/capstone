@@ -21,12 +21,12 @@ pipeline {
 			sh './run_docker.sh'
 		}
 	}
-	// stage('Uploading docker image') {
-	// 	steps {
-	// 		echo "Pushing docker image"
-	// 		sh './upload_docker.sh'
-	// 	}
-	// }
+	stage('Uploading docker image') {
+		steps {
+			echo "Pushing docker image"
+			sh './upload_docker.sh'
+		}
+	}
   }
 }
 
