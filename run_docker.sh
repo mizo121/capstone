@@ -1,12 +1,12 @@
 dockerpath=mizo121/capstone
 # Step 1:
 # Build image and add a descriptive tag
-docker build --tag=$dockerpath .
+sudo docker build --tag=$dockerpath .
 
 # Step 2: 
 # List docker images
-docker image ls
+sudo docker image ls
 
 # Step 3: 
 # Run my custom app
-docker run -p 8000:80 $dockerpath
+sudo docker run -p 8000:80 $dockerpath
