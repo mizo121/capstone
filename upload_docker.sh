@@ -1,6 +1,6 @@
 # dockerpath=<your docker ID/path>
-dockerpath = mizo121/capstone
-version = 1.0
+dockerpath=mizo121/capstone
+version=1.0
 
 # Step 2:  
 # Authenticate & tag

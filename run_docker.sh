@@ -1,4 +1,4 @@
-dockerpath = mizo121/capstone
+dockerpath=mizo121/capstone
 # Step 1:
 # Build image and add a descriptive tag
 docker build --tag=$dockerpath .
